@@ -1,0 +1,11 @@
+name: f1
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - seaborn
+  - jupyterlab
+  - pandas
+  - matplotlib
+  - fastf1
+prefix: /home/aditya-mathpal/miniconda3/envs/f1

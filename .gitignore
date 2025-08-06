@@ -2,6 +2,6 @@ __pycache__/
 .ipynb_checkpoints/
 .cache/
 .env/
-.cache/
 *.pyc
 .DS_Store
+cache

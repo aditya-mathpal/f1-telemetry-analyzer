@@ -39,15 +39,15 @@ if year != 'Select Year':
                         fastest = session.laps.pick_drivers(_).pick_fastest()
                         lap.append(fastest)
                         tel.append(fastest.get_car_data().add_distance())
-                fig, ax = plt.subplots(figsize = (12, 7))
+                fig, ax = plt.subplots(figsize = (12, 8))
                 for i, (driver_code, telemetry) in enumerate(zip(selected_drivers, tel)):
                     driver_name = [name for name, code in driver_mapping.items() if code == driver_code][0]
                     ax.plot(telemetry['Distance'], telemetry['Speed'], label = driver_name, alpha = 0.7)
-                ax.set_xlabel('Distance (m)')
-                ax.set_ylabel('Speed (km/h)')
-                ax.set_title(f'Speed Comparison - Fastest Lap - {selected_circuit} {year} {session_type}')
-                ax.legend()
-                ax.grid(True, alpha=0.3)
+                ax.set_xlabel('Distance (m)', fontsize = 16)
+                ax.set_ylabel('Speed (km/h)', fontsize = 16)
+                ax.set_title(f'Speed Comparison - Fastest Lap - {selected_circuit} {year} {session_type}', fontsize = 20)
+                ax.legend(fontsize = 14)
+                ax.grid(True, alpha=0.3, linewidth = 1.5)
                 st.pyplot(fig)
         except Exception as e:
             st.error(f'Error loading data: {str(e)}')

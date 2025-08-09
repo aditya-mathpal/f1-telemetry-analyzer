@@ -8,4 +8,5 @@ dependencies:
   - pandas
   - matplotlib
   - fastf1
+  - streamlit
 prefix: /home/aditya-mathpal/miniconda3/envs/f1

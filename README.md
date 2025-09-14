@@ -1,5 +1,8 @@
 # Formula One Lap Comparison Dashboard
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f19da227-6efa-4217-889c-53b3e23b8ec1" />  
+
+
 This project compares best lap times for F1 drivers at any session.
 
 [View Live on Streamlit Cloud](https://f1-telemetry.streamlit.app/)
